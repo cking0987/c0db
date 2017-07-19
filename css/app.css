@@ -8240,16 +8240,11 @@ body, html {
   .section-about .brand-logo {
     text-align: center;
     opacity: .8;
+    height: 100%;
     background-image: url("../img/c9db_logo_md_white.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
-    @media (pointer: coarse) {
-      .section-about .brand-logo {
-        height: 50%; } }
-    @media (pointer: fine) {
-      .section-about .brand-logo {
-        height: 100%; } }
   .section-about .jumbo-text {
     text-align: center;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }

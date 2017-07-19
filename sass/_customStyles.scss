@@ -133,12 +133,7 @@ body, html {
   .brand-logo {
     text-align: center;
     opacity: .8;
-    @media (pointer:coarse){
-      height: 50%
-    }
-    @media (pointer:fine){
-      height:100%
-    }
+    height: 100%;
     background-image: url("../img/c9db_logo_md_white.png");
     background-position: center;
     background-repeat: no-repeat;
