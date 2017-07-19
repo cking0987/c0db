@@ -106,12 +106,23 @@ body, html {
 .hero-img {
     background-image: url("../img/hero1-logo.jpg");
 }
+@media (pointer: coarse) {
+  #heroHeader {
+    display: none;
+  }
+}
 
 //
 /// Home Page- About Section
 .section-about {
-  padding-top: 2*$grid-gutter-width;
-  padding-bottom: 2*$grid-gutter-width;
+  @media (pointer: coarse) {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  @media (pointer: fine) {
+    padding-top: 2*$grid-gutter-width;
+    padding-bottom: 2*$grid-gutter-width;
+  }
   background-image: url("../img/services-bg-2.jpg");
   background-position: bottom;
   background-size: cover;
@@ -122,7 +133,12 @@ body, html {
   .brand-logo {
     text-align: center;
     opacity: .8;
-    height: 100%;
+    @media (pointer:coarse){
+      height: 50%
+    }
+    @media (pointer:fine){
+      height:100%
+    }
     background-image: url("../img/c9db_logo_md_white.png");
     background-position: center;
     background-repeat: no-repeat;

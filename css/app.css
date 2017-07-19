@@ -8219,23 +8219,37 @@ body, html {
 .hero-img {
   background-image: url("../img/hero1-logo.jpg"); }
 
+@media (pointer: coarse) {
+  #heroHeader {
+    display: none; } }
 .section-about {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-image: url("../img/services-bg-2.jpg");
   background-position: bottom;
   background-size: cover;
   color: #ece8df; }
+  @media (pointer: coarse) {
+    .section-about {
+      padding-top: 10px;
+      padding-bottom: 25px; } }
+  @media (pointer: fine) {
+    .section-about {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   .section-about button {
     margin-top: 30px; }
   .section-about .brand-logo {
     text-align: center;
     opacity: .8;
-    height: 100%;
     background-image: url("../img/c9db_logo_md_white.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
+    @media (pointer: coarse) {
+      .section-about .brand-logo {
+        height: 50%; } }
+    @media (pointer: fine) {
+      .section-about .brand-logo {
+        height: 100%; } }
   .section-about .jumbo-text {
     text-align: center;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
