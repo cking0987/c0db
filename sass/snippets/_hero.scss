@@ -1,0 +1,39 @@
+//
+/// hero section on home page
+
+div.hero-container {
+  display: block;
+  height: 100vh;
+  padding: 0;
+  div.hero-content {
+    position: relative;
+    width: 500px;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    div.hero-cell {
+      @media (max-width:530px){
+        text-align: center;
+      }
+      @media (min-width:531px){
+        display: inline-block;
+      }
+      img.hero-img {
+        height: 175px;
+        width: 175px;
+      }
+    }
+  }
+}
+
+.hero-scroll-arrow {
+  color: $brand-primary;
+  opacity: 0.3;
+  font-size: 80px;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  bottom: 10px;
+}

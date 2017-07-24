@@ -1,40 +1,15 @@
+@import 'snippets/hero';
+@import 'snippets/parallax';
+@import 'snippets/buttons';
+@import 'snippets/project-pages';
+@import 'snippets/typography';
+@import 'snippets/footer';
+
 //
 /// Sitewide adjustments
-  body {
-    letter-spacing: $letter-spacing;
-  }
-  h1 {
-    font-weight: 600;
-  }
-  .text-sans-serif {
-    font-family: $font-family-sans-serif;
-  }
-  .btn-clear {
-    background: none;
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: $font-family-sans-serif;
-  }
-  .btn-clear-light {
-    border: 1px solid $text-light;
-    background-color: rgba( $text-dark, 0.4 );
-    &:hover {
-      background-color: rgba( $text-light, 0.2 );
-      color: white;
-    }
-  }
-  .btn-clear-dark {
-    border: 1px solid $text-dark;
-    background-color: rgba( $text-light, 0.15 );
-    color: $text-dark;
-    &:hover {
-      background-color: rgba( $text-dark, 0.15 );
-      color: darken( $text-dark, 50%);
-    }
-  }
-  .btn-full-width {
-    width: 100%;
-  }
+.full-window-height {
+  height: 100vh;
+}
   .grid-margins {
     margin-top: $grid-gutter-width;
     margin-bottom: $grid-gutter-width;
@@ -47,27 +22,6 @@
   }
   .thumbnail img {
     width: 100%;
-  }
-
-
-
-  //
-  /// Parallax Effect
-  @media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-  }
-  .parallax {
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
   }
 //
 /// Navbar
@@ -82,68 +36,42 @@
       text-transform: uppercase;
     }
   }
+
   #navBarSpacer {
     height: $navbar-height;
+    outline: none;
   }
 
-//
-/// Home page- hero
-body, html {
-  height: 100%;
-  height: 100vh;
-}
-.parallax {
-  .hero-scroll-arrow {
-    color: white;
-    opacity: 0.3;
-    font-size: 80px;
-    font-weight: 500;
-    position: absolute;
-    bottom: 10px;
-    transform:translateX(-25px);
-  }
-}
-.hero-img {
-    background-image: url("../img/hero1-logo.jpg");
-}
-@media (pointer: coarse) {
-  #heroHeader {
-    display: none;
-  }
-}
 
 //
 /// Home Page- About Section
 .section-about {
+  background-image: url("../img/services-bg-2.jpg");
+  background-position: center;
+  background-size: cover;
+  color: $text-light;
+  margin-bottom: 0;
   @media (pointer: coarse) {
     padding-top: 10px;
     padding-bottom: 25px;
   }
   @media (pointer: fine) {
-    padding-top: 2*$grid-gutter-width;
-    padding-bottom: 2*$grid-gutter-width;
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
   }
-  background-image: url("../img/services-bg-2.jpg");
-  background-position: bottom;
-  background-size: cover;
-  color: $text-light;
-  button {
-    margin-top: $grid-gutter-width;
-  }
-  .brand-logo {
-    text-align: center;
-    opacity: .8;
-    height: 100%;
-    background-image: url("../img/c9db_logo_md_white.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .jumbo-text {
-    text-align: center;
+  p {
+    text-align: left;
+    indent: 25px;
     font-family: $font-family-sans-serif;
-    p {
-      font-size: 1.1em;
+    font-size: 1.3em;
+    line-height: 2em;
+    letter-spacing: .15em;
+  }
+  @media (min-width: $screen-sm) {
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -202,22 +130,6 @@ body, html {
   margin-bottom: $grid-gutter-width;
 }
 
-//
-/// Project Pages
-.project-section-mockup {
-  margin-bottom: $grid-gutter-width;
-  img.laptopMockup {
-    width: 100%;
-  }
-}
-.project-section-info {
-  h4 {
-    font-weight: 600;
-  }
-  p {
-    font-family: $font-family-sans-serif;
-  }
-}
 
 //
 /// Services Page
@@ -228,31 +140,5 @@ body, html {
     li {
       font-family: $font-family-sans-serif;
     }
-  }
-}
-
-//
-/// Footer
-footer {
-  padding-top: $grid-gutter-width;
-  padding-bottom: 2*$grid-gutter-width;
-  .container {
-    padding-top: $grid-gutter-width;
-      border-top: 1px dotted $gray-light;
-  }
-  ul.vertical-list {
-    list-style: none;
-    padding: 0;
-  }
-  ul.social-link-list {
-    list-style: none;
-    padding: 0;
-    display: inline-flex;
-    li {
-      padding: 5px;
-    }
-  }
-  a {
-    color: lighten( $text-color, 40%);
   }
 }

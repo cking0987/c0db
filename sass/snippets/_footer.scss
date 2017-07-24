@@ -1,0 +1,23 @@
+footer {
+  padding-top: $grid-gutter-width;
+  padding-bottom: 2*$grid-gutter-width;
+  .container {
+    padding-top: $grid-gutter-width;
+      border-top: 1px dotted $gray-light;
+  }
+  ul.vertical-list {
+    list-style: none;
+    padding: 0;
+  }
+  ul.social-link-list {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    li {
+      padding: 5px;
+    }
+  }
+  a {
+    color: lighten( $text-color, 40%);
+  }
+}

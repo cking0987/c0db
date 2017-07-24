@@ -1,0 +1,26 @@
+.btn-clear {
+  background: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: $font-family-sans-serif;
+}
+.btn-clear-light {
+  border: 1px solid $text-light;
+  background-color: rgba( $text-dark, 0.4 );
+  &:hover {
+    background-color: rgba( $text-light, 0.2 );
+    color: white;
+  }
+}
+.btn-clear-dark {
+  border: 1px solid $text-dark;
+  background-color: rgba( $text-light, 0.15 );
+  color: $text-dark;
+  &:hover {
+    background-color: rgba( $text-dark, 0.15 );
+    color: darken( $text-dark, 50%);
+  }
+}
+.btn-full-width {
+  width: 100%;
+}

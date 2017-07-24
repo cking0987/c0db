@@ -11,17 +11,35 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-102606567-2', 'auto');
       ga('send', 'pageview');
-
     </script>
   </head>
   <body>
 
-    <div id="heroHeader" class="parallax hero-img">
-      <i class="fa fa-angle-double-down hero-scroll-arrow" aria-hidden="true"></i>
+
+    <div id="heroHeader" class="hero-container">
+        <div class="hero-content">
+          <div class="hero-cell">
+            <img class="hero-img" src="img/c9db_logo_3x.png" alt="">
+          </div>
+          <div class="hero-cell">
+            <div class="hero-text">
+              <h1>C9DB</h1>
+            </div>
+          </div>
+          <div class="hero-cell">
+            <div class="hero-text">
+              <h1 class="text-color-brand">[web design]</h1>
+            </div>
+          </div>
+        </div>
+      <a href="#navBarSpacer">
+        <i class="fa fa-angle-double-down hero-scroll-arrow" aria-hidden="true"></i>
+      </a>
     </div>
+
+
 
     <nav id="navBar" class="navbar navbar-default">
       <div class="container">
@@ -50,27 +68,27 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div id="navBarSpacer">
-    </div>
+
+    <!-- replaces vertical space when navbar becomes fixed -->
+    <div id="navBarSpacer"></div>
 
     <!-- Page Content -->
-    <div class="jumbotron section-about">
+    <div id="pageContentStart" class="parallax jumbotron section-about">
       <div class="container">
         <div class="row">
-          <div id="section1Logo" class="col-md-3 brand-logo">
-          </div>
-          <div id="section1Text" class="col-md-9 jumbo-text">
-            <h1>C9DB</h1>
-            <h3>Web Design and Build Services</h3>
-            <p>My name is Charles King. I design and build web spaces.
+          <div class="col-sm-8">
+            <h1>My name is Charles King.</h1>
+              <p>I design and build web spaces.
               My approach to creation in a digital environment is based on
               the same principles that guide development of the physical world;
               focus on thoughtful planning and careful deployment makes for
-              smooth project execution and effortless maintenance. Let me help you
-              realize your next digital vision.
+              smooth project execution and effortless maintenance.
               </p>
-            <a href="mailto:cking@c9db.com">
-              <button class="btn btn-clear btn-clear-light btn-lg">Email me to get started.</button>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a class="link-bright no-underline" href="mailto:cking@c9db.com">
+              <h1><i class="fa fa-envelope-open-o" aria-hidden="true"></i></h1>
+              <h4>inbox is open</h4>
             </a>
           </div>
         </div>

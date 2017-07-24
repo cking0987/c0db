@@ -1,0 +1,33 @@
+//
+/// colors
+
+.text-light {
+  color: $text-light;
+}
+.link-bright {
+  color: white;
+  &:hover {
+    color: $brand-primary;
+  }
+}
+.text-color-brand {
+  color: $brand-primary;
+}
+
+//
+/// sizing
+body {
+  letter-spacing: $letter-spacing;
+}
+h1 {
+  font-weight: 600;
+}
+
+//
+/// misc
+.text-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+a.no-underline {
+  text-decoration: none;
+}
