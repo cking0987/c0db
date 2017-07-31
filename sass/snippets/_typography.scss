@@ -31,3 +31,12 @@ h1 {
 a.no-underline {
   text-decoration: none;
 }
+.title-underline::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 120px;
+  margin: 15px auto 20px;
+  position: relative;
+  background-color: $brand-primary;
+}
